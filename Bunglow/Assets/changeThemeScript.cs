@@ -4,21 +4,16 @@ using UnityEngine;
 
 public class changeThemeScript : MonoBehaviour {
 
-    public Texture m_MainTexture, m_Normal, m_Metal;
+    public Texture [] m_MainTexture;
     Renderer m_Renderer;
     public bool flag;
+    public int arrayLength,index = 0;
     // Use this for initialization
     void Start () {
         m_Renderer = GetComponent<Renderer>();
-        //Make sure to enable the Keywords
         m_Renderer.material.EnableKeyword("_ALBEDO");
-
-       /* //Set the Texture you assign in the Inspector as the main texture (Or Albedo)
-        m_Renderer.material.SetTexture("_MainTex", m_MainTexture);
-        //Set the Normal map using the Texture you assign in the Inspector
-        m_Renderer.material.SetTexture("_BumpMap", m_Normal);
-        //Set the Metallic Texture as a Texture you assign in the Inspector
-        m_Renderer.material.SetTexture("_MetallicGlossMap", m_Metal);*/
+        arrayLength = m_MainTexture.Length;
+        m_Renderer.material.SetTexture("_MainTex", m_MainTexture[index]);
     }
 	
 	// Update is called once per frame
@@ -26,7 +21,13 @@ public class changeThemeScript : MonoBehaviour {
         flag = Input.GetKeyDown("e");
         if(flag)
         {
-            m_Renderer.material.SetTexture("_MainTex", m_MainTexture);
+            m_Renderer.material.SetTexture("_MainTex", m_MainTexture[index]);
+            index++;
+            if (index == arrayLength){
+                index = 0;
+            }
+ 
+            flag = false;
         }
 	}
 }

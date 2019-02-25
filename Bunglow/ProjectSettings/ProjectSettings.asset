@@ -154,7 +154,7 @@ PlayerSettings:
     Android: com.codeless.bunglow
   buildNumber: {}
   AndroidBundleVersionCode: 1
-  AndroidMinSdkVersion: 26
+  AndroidMinSdkVersion: 25
   AndroidTargetSdkVersion: 0
   AndroidPreferredInstallLocation: 1
   aotOptions: 
@@ -712,12 +712,13 @@ PlayerSettings:
       daydreamIconForeground: {fileID: 0}
       daydreamIconBackground: {fileID: 0}
   cloudServicesEnabled:
+    Collab: 1
     UNet: 1
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
-  cloudProjectId: b2e96f14-1925-4cf8-8a4b-6848d9714724
+  cloudProjectId: 4775371f-a8aa-44c9-b296-45384c892a84
   projectName: Bunglow
-  organizationId: saurabhkulkarni
+  organizationId: prajeshm07
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0

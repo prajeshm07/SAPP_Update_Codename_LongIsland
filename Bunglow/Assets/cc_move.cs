@@ -58,41 +58,29 @@ public class cc_move : MonoBehaviour {
 			}
 		}
 
-		/*if (Input.GetButtonDown ("shootup")) {
+		if (Input.GetButtonDown ("shootup")) {
 			hitraycast (1);
 		}	
 		if (Input.GetButtonDown ("shootdown")) {
 				
-			hitraycast (2);
-		}*/
+			hitraycast (1);
+		}
 	}
 	void getinput()
 	{
 		v = Input.GetAxis ("Vertical");
 		h = Input.GetAxis ("Horizontal");
-	}/*
+	}
 	void hitraycast (int x)
 	{
 		RaycastHit hitinfo;
 		if (Physics.Raycast (vrcam.transform.position, vrcam.transform.forward, out hitinfo)) {
-			change_color_wall_script s = hitinfo.transform.GetComponent<change_color_wall_script> ();
+			changeThemeScript s = hitinfo.transform.GetComponent<changeThemeScript> ();
 			if (s != null) {
-				s.colorchange (x);
-			} else if (s == null) {
-				move_object_script g = hitinfo.transform.GetComponent<move_object_script> ();
-				if (g != null && s == null) {
-					if(pmove == true ){
-						pmove = false;
-						g.move ();
-					}
-					else if(pmove == false){
-						pmove = true;
-						g.stopmove ();
-					}
-				}
+				s.changeTheme (x);
+			}
 			}
 		}
 
-	}*/
 }
 

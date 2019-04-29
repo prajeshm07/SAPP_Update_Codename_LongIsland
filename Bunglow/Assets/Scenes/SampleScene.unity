@@ -1482,6 +1482,10 @@ Prefab:
       propertyPath: m_Lightmapping
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1773097835080726, guid: 3bd2d05925b3008439a5284569ff5923, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3bd2d05925b3008439a5284569ff5923, type: 2}
   m_IsPrefabAsset: 0
@@ -2680,6 +2684,31 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 510d8147b5afb0446b395171fc7f2c85, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &896895965 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1542160390754362, guid: af8a795d82121d34d9f98641179e224f,
+    type: 2}
+  m_PrefabInternal: {fileID: 1535873727}
+--- !u!114 &896895966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 896895965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 201ecfd8a922e6f488135fceafaa6a6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MainTexture:
+  - {fileID: 2800000, guid: 33aade44f30acc843ae99cd5a08daceb, type: 3}
+  - {fileID: 2800000, guid: 696f6f79707a6d54aaaf07a0f7554f5d, type: 3}
+  - {fileID: 2800000, guid: 82c1650c12a21c8409e821bf15e26817, type: 3}
+  - {fileID: 2800000, guid: 40a2d542e0452374d9652b1c8f5c5c7d, type: 3}
+  - {fileID: 2800000, guid: 3451392c55c20424ba3c489a96c71ebf, type: 3}
+  flag: 0
+  arrayLength: 0
+  index: 0
 --- !u!4 &897005112 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4643675749220924, guid: ae25dcdcd71d07643b05069a0236b23f,
@@ -4901,7 +4930,7 @@ Light:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1643673227}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 8
   m_Type: 2
   m_Color: {r: 0.754717, g: 0.754717, b: 0.754717, a: 1}
